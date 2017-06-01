@@ -1,0 +1,31 @@
+{
+  "name": "didi.github.io",
+  "version": "1.0.0",
+  "description": "滴滴开源平台前端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didi/didi.github.io.git"
+  },
+  "keywords": [
+    "didi",
+    "opensource"
+  ],
+  "author": "DiDi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didi/didi.github.io/issues"
+  },
+  "homepage": "https://github.com/didi/didi.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1"
+  }
+}
