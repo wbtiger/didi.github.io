@@ -75,7 +75,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, ".header {\n  background-color: #000;\n  border-bottom: 1px solid #fa8919;\n}\n.header .header-inner {\n  position: relative;\n  height: 60px;\n  overflow: hidden;\n}\n.header .header-inner .logo {\n  height: 60px;\n}\n.header .header-inner .title {\n  display: inline;\n  color: #fff;\n}\n.banner {\n  height: 450px;\n  background: url(http://tencentopen.github.io/img/banner1.jpg) center center;\n  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);\n}\n.banner .slide1 {\n  height: 450px;\n}\n.banner .slide2 {\n  height: 450px;\n}\n.title {\n  text-align: center;\n  margin: 20px 0;\n  color: #5A5A5A;\n}\n.project .project-name {\n  text-align: center;\n}\n.project .project-summary {\n  ont-size: 18px;\n  color: #3a3a3a;\n  text-align: center;\n}\n.project .project-desc {\n  color: #999999;\n}\n.footer {\n  color: #fff;\n  text-align: center;\n  padding: 30px 0;\n  margin-top: 70px;\n  border-top: 1px solid #e5e5e5;\n  background-color: #252525;\n}\n", ""]);
+exports.push([module.i, "a {\n  color: #ff8802;\n}\n.header {\n  border-bottom: 2px solid #fe8d02;\n}\n.header .header-inner {\n  position: relative;\n  height: 40px;\n  overflow: hidden;\n}\n.header .header-inner .logo {\n  height: 60px;\n}\n.header .header-inner .title {\n  display: inline;\n  color: #666;\n  font-size: 14px;\n  font-family: Semibold;\n}\n.banner {\n  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);\n}\n.title {\n  text-align: center;\n  margin: 34px 0;\n  color: #5A5A5A;\n}\n.project .project-name {\n  text-align: center;\n  font-size: 20px;\n  color: #ff8802;\n  font-family: \"Semibold\";\n}\n.project .project-summary {\n  font-size: 14px;\n  color: #666;\n  text-align: center;\n}\n.project .project-desc {\n  color: #999999;\n  font-size: 10px;\n}\n.footer {\n  text-align: center;\n  padding: 30px 0;\n  margin-top: 70px;\n  background-color: #eaeaea;\n}\n", ""]);
 
 // exports
 
@@ -252,10 +252,10 @@ function insertStyleElement (options, style) {
 }
 
 function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
 	style.parentNode.removeChild(style);
 
 	var idx = stylesInsertedAtTop.indexOf(style);
-
 	if(idx >= 0) {
 		stylesInsertedAtTop.splice(idx, 1);
 	}
