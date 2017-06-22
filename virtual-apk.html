@@ -10,10 +10,17 @@
 	<script type="text/javascript" src="js/bundle.js"></script>
 	<link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-4ba00b1aa0227e4b7a7961544c3b7938afb2720757a471735991ec4475c829e0.css" integrity="sha256-S6ALGqAifkt6eWFUTDt5OK+ycgdXpHFzWZHsRHXIKeA=" media="all" rel="stylesheet" />
 	<link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-81684fd7510dbd0631cf199316b86c30d3741f8600001e7998ec8ec766d6423c.css" integrity="sha256-gWhP11ENvQYxzxmTFrhsMNN0H4YAAB55mOyOx2bWQjw=" media="all" rel="stylesheet" />
+	<style>
+		.markdown-body h1 {
+			padding-bottom: 0.3em;
+			font-size: 24px;
+			border-bottom: 0px solid #eaecef !important;
+		}
+	</style>
 </head>
 
 <body>
-	<div class="header">
+	<div class="header-own">
 		<div class="header-inner container">
 			<img class="logo" src="images/logo.png">
 			<p class="title">滴滴开源平台</p>
@@ -27,7 +34,7 @@
 	</div>
 	<div class="container sub-container">
 		<div class="head-title">
-			滴滴VirtualAPK的一切都在这里，包括源码
+			VirtualAPK
 			<div class="head-button">
 				<a href="https://github.com/didichuxing/VirtualAPK">点击查看项目源码</a>
 			</div>
@@ -36,11 +43,11 @@
 		<div class="sub-content">
 			<div id="wiki-body" class="wiki-body gollum-markdown-content instapaper_body">
 				<div class="markdown-body">
+					<p>VirtualAPK是滴滴出行自研的一款优秀的插件化框架，通过将业务模块插件化，可随时更新插件来发布新功能，具备版本随时发的能力。</p>
 					<h1>
-<a id="user-content-virtualapk的特性" class="anchor" href="#virtualapk%E7%9A%84%E7%89%B9%E6%80%A7" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VirtualAPK的特性</h1>
-					<p>VirtualAPK是滴滴出行自研的一款优秀的插件化框架，主要有如下几个特性。</p>
+						<a id="user-content-virtualapk的特性" class="anchor" aria-hidden="true"></a>VirtualAPK的特性</h1>
 					<h3>
-<a id="user-content-功能完备" class="anchor" href="#%E5%8A%9F%E8%83%BD%E5%AE%8C%E5%A4%87" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>功能完备</h3>
+						<a id="user-content-功能完备" class="anchor" aria-hidden="true"></a>功能完备</h3>
 					<ul>
 						<li>支持几乎所有的Android特性；</li>
 						<li>四大组件方面</li>
@@ -59,7 +66,7 @@
 						<li>支持插件中的<code>so</code>。</li>
 					</ul>
 					<h3>
-<a id="user-content-优秀的兼容性" class="anchor" href="#%E4%BC%98%E7%A7%80%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优秀的兼容性</h3>
+						<a id="user-content-优秀的兼容性" class="anchor" aria-hidden="true"></a>优秀的兼容性</h3>
 					<ul>
 						<li>兼容市面上几乎所有的Android手机，这一点已经在滴滴出行客户端中得到验证；</li>
 						<li>资源方面适配小米、Vivo、Nubia等，对未知机型采用自适应适配方案；</li>
@@ -67,14 +74,14 @@
 						<li>插件运行逻辑和宿主隔离，确保框架的任何问题都不会影响宿主的正常运行。</li>
 					</ul>
 					<h3>
-<a id="user-content-入侵性极低" class="anchor" href="#%E5%85%A5%E4%BE%B5%E6%80%A7%E6%9E%81%E4%BD%8E" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>入侵性极低</h3>
+						<a id="user-content-入侵性极低" class="anchor" aria-hidden="true"></a>入侵性极低</h3>
 					<ul>
 						<li>插件开发等同于原生开发，四大组件无需继承特定的基类；</li>
 						<li>精简的插件包，插件可以依赖宿主中的代码和资源，也可以不依赖；</li>
 						<li>插件的构建过程简单，通过Gradle插件来完成插件的构建，整个过程对开发者透明。</li>
 					</ul>
 					<h1>
-<a id="user-content-virtualapk和主流开源框架的对比" class="anchor" href="#virtualapk%E5%92%8C%E4%B8%BB%E6%B5%81%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AF%B9%E6%AF%94" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VirtualAPK和主流开源框架的对比</h1>
+						<a id="user-content-virtualapk和主流开源框架的对比" class="anchor" aria-hidden="true"></a>VirtualAPK和主流开源框架的对比</h1>
 					<p>如下是VirtualAPK和主流的插件化框架之间的对比。</p>
 					<table>
 						<thead>
@@ -147,7 +154,7 @@
 						</tbody>
 					</table>
 					<h3>
-<a id="user-content-为什么选择virtualapk" class="anchor" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9virtualapk" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>为什么选择VirtualAPK？</h3>
+						<a id="user-content-为什么选择virtualapk" class="anchor" aria-hidden="true"></a>为什么选择VirtualAPK？</h3>
 					<p>已经有那么多优秀的开源的插件化框架，滴滴为什么要重新造一个轮子呢？</p>
 					<p><strong>1. 大部分开源框架所支持的功能还不够全面</strong> 除了DroidPlugin，大部分都只支持Activity。
 					</p>
@@ -160,23 +167,23 @@
 					<p>基于上述几点，我们只能重新造一个轮子，它不但功能全面、兼容性好，还必须能够适用于有耦合的业务插件，这就是VirtualAPK存在的意义。</p>
 					<p><strong>在加载耦合插件方面，VirtualAPK是开源方案的首选，推荐大家使用</strong>。</p>
 					<h4>
-<a id="user-content-通俗易懂地说" class="anchor" href="#%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E5%9C%B0%E8%AF%B4" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>通俗易懂地说</h4>
+						<a id="user-content-通俗易懂地说" class="anchor" aria-hidden="true"></a>通俗易懂地说</h4>
 					<ol>
 						<li>如果你是要加载微信、支付宝等第三方APP，那么推荐选择DroidPlugin；</li>
 						<li>如果你是要加载一个内部业务模块，并且这个业务模块很难从主工程中解耦，那么VirtualAPK是最好的选择。</li>
 					</ol>
 					<h4>
-<a id="user-content-抽象地说" class="anchor" href="#%E6%8A%BD%E8%B1%A1%E5%9C%B0%E8%AF%B4" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>抽象地说</h4>
+						<a id="user-content-抽象地说" class="anchor" aria-hidden="true"></a>抽象地说</h4>
 					<ol>
 						<li>如果你要加载一个插件，并且这个插件无需和宿主有任何耦合，也无需和宿主进行通信，并且你也不想对这个插件重新打包，那么推荐选择DroidPlugin；</li>
 						<li>除此之外，在同类的开源中，推荐大家选择VirtualAPK。</li>
 					</ol>
 					<h1>
-<a id="user-content-virtualapk的工作过程" class="anchor" href="#virtualapk%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VirtualAPK的工作过程</h1>
+						<a id="user-content-virtualapk的工作过程" class="anchor" aria-hidden="true"></a>VirtualAPK的工作过程</h1>
 					<p>VirtualAPK对插件没有额外的约束，原生的apk即可作为插件。插件工程编译生成apk后，即可通过宿主App加载，每个插件apk被加载后，都会在宿主中创建一个单独的LoadedPlugin对象。如下图所示，通过这些LoadedPlugin对象，VirtualAPK就可以管理插件并赋予插件新的意义，使其可以像手机中安装过的App一样运行。
 						<img src="https://camo.githubusercontent.com/f68286d8c05c69a9c19b80db834febcfb3085bbc/687474703a2f2f696d672e6d792e6373646e2e6e65742f75706c6f6164732f3230313730362f31312f313439373137383438355f333335382e706e67" alt="VirtualAPK" data-canonical-src="http://img.my.csdn.net/uploads/201706/11/1497178485_3358.png"></p>
 					<h3>
-<a id="user-content-如何使用" class="anchor" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>如何使用</h3>
+						<a id="user-content-如何使用" class="anchor" aria-hidden="true"></a>如何使用</h3>
 					<p>第一步： 初始化插件引擎</p>
 					<pre><code>@Override
 protected void attachBaseContext(Context base) {
@@ -209,9 +216,9 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 </code></pre>
 					<h1>
-<a id="user-content-探究原理" class="anchor" href="#%E6%8E%A2%E7%A9%B6%E5%8E%9F%E7%90%86" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>探究原理</h1>
+						<a id="user-content-探究原理" class="anchor" aria-hidden="true"></a>探究原理</h1>
 					<h3>
-<a id="user-content-基本原理" class="anchor" href="#%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>基本原理</h3>
+						<a id="user-content-基本原理" class="anchor" aria-hidden="true"></a>基本原理</h3>
 					<ul>
 						<li>
 							<strong>合并宿主和插件的ClassLoader</strong> 需要注意的是，插件中的类不可以和宿主重复
@@ -224,7 +231,7 @@ protected void onCreate(Bundle savedInstanceState) {
 						</li>
 					</ul>
 					<h3>
-<a id="user-content-四大组件的实现原理" class="anchor" href="#%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>四大组件的实现原理</h3>
+						<a id="user-content-四大组件的实现原理" class="anchor" aria-hidden="true"></a>四大组件的实现原理</h3>
 					<ul>
 						<li>
 							<strong>Activity</strong> 采用宿主manifest中占坑的方式来绕过系统校验，然后再加载真正的activity；
