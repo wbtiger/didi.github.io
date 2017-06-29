@@ -182,7 +182,7 @@
 					<h1>
 						<a id="user-content-virtualapk的工作过程" class="anchor" aria-hidden="true"></a>VirtualAPK的工作过程</h1>
 					<p>VirtualAPK对插件没有额外的约束，原生的apk即可作为插件。插件工程编译生成apk后，即可通过宿主App加载，每个插件apk被加载后，都会在宿主中创建一个单独的LoadedPlugin对象。如下图所示，通过这些LoadedPlugin对象，VirtualAPK就可以管理插件并赋予插件新的意义，使其可以像手机中安装过的App一样运行。
-						<img src="images/process.png" alt="VirtualAPK" data-canonical-src="http://img.my.csdn.net/uploads/201706/11/1497178485_3358.png"></p>
+						<img src="./images/virtual-1.png" alt="VirtualAPK" data-canonical-src="http://img.my.csdn.net/uploads/201706/11/1497178485_3358.png"></p>
 					<h3>
 						<a id="user-content-如何使用" class="anchor" aria-hidden="true"></a>如何使用</h3>
 					<p>第一步： 初始化插件引擎</p>
@@ -247,8 +247,8 @@ protected void onCreate(Bundle savedInstanceState) {
 							<strong>ContentProvider</strong> 动态代理IContentProvider，拦截provider相关的请求，将其中转给
 							<code>Provider Runtime</code>去处理，<code>Provider Runtime</code>会接管系统的所有操作。</li>
 					</ul>
-					<p>如下是VirtualAPK的整体架构图，更详细的内容请大家阅读源码。</p>
-					<p><img src="images/structure.png" alt="VirtualAPK" data-canonical-src="http://img.my.csdn.net/uploads/201706/11/1497179123_9847.jpg"></p>
+					<p>如下是VirtualAPK的整体架构图，更详细的内容请大家<a href="https://github.com/didi/VirtualAPK">阅读源码</a>。</p>
+					<p><img src="./images/virtual-2.jpeg" alt="VirtualAPK" data-canonical-src="http://img.my.csdn.net/uploads/201706/11/1497179123_9847.jpg"></p>
 
 				</div>
 			</div>
